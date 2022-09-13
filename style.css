@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  box-sizing: border-box;
+  line-height: 1.5;
+  cursor: pointer;
+}
+p {
+  opacity: 70%;
+}
+.outer-container {
+  width: 100%;
+  height: auto;
+}
+.inner-container {
+  width: 100%;
+ height: 100%;
+ min-width: 380px;
+
+
+
+  margin: 0 auto;
+  background-color: hsl(219, 54%, 11%);
+  color: white;
+  padding: 3em 0;
+}
+.img-box {
+  position: relative;
+  max-height: 100%;
+}
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 10px;
+  background-color: hsl(180, 100%, 50%);
+  transition: all 0.3s linear;
+}
+.img-box:hover .layer {
+  opacity: 0.4;
+  cursor: pointer;
+}
+.v1 {
+  margin-top: -28px;
+  margin-left: -36px;
+  right: 50%;
+  position: absolute;
+  top: 53%;
+  left: 56%;
+  opacity: 0;
+  transition: 0.3s all linear;
+}
+.img-box:hover .view {
+  opacity: 1;
+  cursor: pointer;
+}
+.box {
+   max-width: 350px;
+ 
+  background: hsl(210, 50%, 16%);
+  margin: 0 auto;
+  padding: 1.2em;
+  border-radius: 25px;
+}
+.heading {
+  font-family: "Outfit", sans-serif;
+  margin-left: 40px;
+}
+.heading:hover,
+.heading:active {
+  color: hsl(170, 100%, 50%);
+}
+.paragraph {
+  color: hsl(0, 0%, 100%);
+  
+}.paragraph:hover,
+.paragraph:active {
+  color: hsl(72, 100%, 50%);
+}
+
+
+.eq-img {
+  border-radius: 10px;
+  transition: 0.3s ease;
+  opacity: 100%;
+  margin-left: 40px;
+}
+.eq-img:hover,
+.eq-img:active {
+  background-color: hsl(170, 100%, 50%);
+  opacity: 60%;
+}
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid hsl(210, 32%, 27%);
+  padding-bottom: 0.4em;
+}
+.icon-box-1 {
+  margin-right: 0.9em;
+}
+.icon-1-text {
+  color: hsl(173, 100%, 50%);
+  opacity: 100%;
+  font-weight: 400;
+
+}
+.icon-1-text:hover,
+.icon-1-text:active {
+    color: hsl(71, 100%, 50%);
+}
+.icc {
+  margin-right: 0.4em;
+  color: hsl(174, 100%, 50%);
+}
+.clock-icon {
+  margin-right: 0.6em;
+}
+.man {
+  margin-top: 12px;
+}
+.picture {
+  border: 2px solid white;
+  border-radius: 50%;
+  background-size: cover;
+  width: 55px;
+  display: inline-block;
+  margin-right: 0.6em;
+}
+.abt {
+  display: inline-block;
+  vertical-align: top;
+}
+.boldness {
+  color: white;
+  opacity: 100%;
+  font-weight: 500;
+}
+.boldness:hover,
+.boldness:active {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .box {
+    width: 90%;
+  }
+  .outer-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .inner-container {
+    width: 100%;
+    margin: 0;
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+}
